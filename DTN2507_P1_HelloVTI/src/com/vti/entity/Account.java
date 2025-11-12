@@ -10,5 +10,6 @@ public class Account {
 	public Department department;
 	public Position position;
 	public LocalDate createDate;
+	public Group[] groups;
 
 }
