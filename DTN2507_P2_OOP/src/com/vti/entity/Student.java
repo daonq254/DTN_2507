@@ -1,10 +1,30 @@
 package com.vti.entity;
 
 public class Student {
-	public int id;
-	public String email;
-	public String username;
-	public String fullname;
+	private int id;
+	private String email;
+	private String username;
+	private String fullname;
+
+// Thông qua các hàm
+//	Setter
+	public void setUsername(String username) {
+		this.username = "VTI_" + username;
+
+	}
+
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
+	}
+
+//	Getter
+	public String getUsername() {
+		return this.username;
+	}
+
+	public String getFullname() {
+		return this.fullname + "VTI";
+	}
 
 	public void learn() {
 		System.out.println("learn!");
@@ -39,4 +59,13 @@ public class Student {
 		System.out.println("Hello VTI!");
 
 	}
+
+//	toString()
+	@Override
+	public String toString() {
+		return "Student{id: " + this.id + " ,email: " + this.email + " ,username: " + this.username + " ,fullname: "
+				+ this.fullname + " }";
+	}
+
+//	
 }
