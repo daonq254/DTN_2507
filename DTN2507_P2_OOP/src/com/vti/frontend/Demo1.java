@@ -1,6 +1,7 @@
 package com.vti.frontend;
 
 import com.vti.entity.Mentor;
+import com.vti.entity.Trainee;
 
 public class Demo1 {
 	public static void main(String[] args) {
@@ -36,5 +37,14 @@ public class Demo1 {
 //		mentor1.showInfo();
 		mentor1.showInfoMentor();
 //		mentor1.id
+
+//		Tạo ra các Account
+//		Account account1 = new Account();
+//		account1.setId(1);
+//		account1.setEmail("Account1@gmail");
+
+		Trainee trainee1 = new Trainee();
+		mentor1.goToVTI();
+		trainee1.goToVTI();
 	}
 }

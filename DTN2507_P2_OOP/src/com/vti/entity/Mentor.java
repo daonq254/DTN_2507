@@ -1,11 +1,17 @@
 package com.vti.entity;
 
-public class Mentor extends Account {
+public class Mentor extends Account implements IToDoAccount {
 //	private int id;
 //	private String email;
 //	private String username;
 //	private String fullname;
 	private int yearOfExperience;
+
+//	
+	@Override
+	public void goToVTI() {
+		System.out.println("Mentor go to VTI");
+	}
 
 	public int getYearOfExperience() {
 		return yearOfExperience;
@@ -26,5 +32,29 @@ public class Mentor extends Account {
 		System.out.println("email: " + email);
 		System.out.println("username: " + username);
 		System.out.println("fullname" + fullname);
+	}
+
+	@Override
+	public void login() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void attendClass() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void viewSchedule() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sentFeedback() {
+		// TODO Auto-generated method stub
+
 	}
 }

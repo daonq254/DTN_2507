@@ -1,6 +1,6 @@
 package com.vti.entity;
 
-public class Account {
+public abstract class Account {
 	protected int id;
 	protected String email;
 	protected String username;
@@ -13,6 +13,18 @@ public class Account {
 		System.out.println("Username: " + this.username);
 		System.out.println("Fullname: " + this.fullname);
 	}
+
+//	
+//	public abstract void goToVTI();
+//
+//	public abstract void login();
+//
+//	public abstract void attendClass();
+//
+//	public abstract void viewSchedule();
+//
+//	public abstract void sentFeedback();
+
 //	Getter Setter
 
 //	Alr + Shift + S

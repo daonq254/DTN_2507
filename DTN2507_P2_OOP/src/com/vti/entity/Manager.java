@@ -1,16 +1,10 @@
 package com.vti.entity;
 
-public class Trainee extends Account implements IToDoAccount {
-//	private int id;
-//	private String email;
-//	private String username;
-//	private String fullname;
-
-	private String university;
+public class Manager extends Account implements IToDoAccount, IAbc {
 
 	@Override
 	public void goToVTI() {
-		System.out.println("Trainee go to VTI!");
+		System.out.println("Manager go to VTI!!");
 	}
 
 	@Override
@@ -36,4 +30,11 @@ public class Trainee extends Account implements IToDoAccount {
 		// TODO Auto-generated method stub
 
 	}
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+
+	}
+
 }
