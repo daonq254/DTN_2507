@@ -67,4 +67,14 @@ public class Demo1 {
 		System.out.println("Code 8");
 		System.out.println("Code 9");
 	}
+
+	public static void abc() {
+//
+
+	}
+
+	public void xyz() {
+//
+
+	}
 }
