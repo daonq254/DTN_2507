@@ -62,4 +62,20 @@ public class DepartmentManagement {
 		System.out.format(leftAlignFormat, department.getId(), department.getName());
 	}
 
+	public void createDepartment() throws ClassNotFoundException, SQLException {
+		System.out.println("Tạo mới phòng ban");
+		System.out.println("Mời bạn nhập vào tên của phòng ban");
+		String name = ScannerUtils.inputString();
+
+		Boolean resutlCreate = departmentDao.createDepartment(name);
+		if (resutlCreate) {
+			System.out.println("Create Successfully!!");
+			getAllDepartment();
+		} else {
+			System.out.println("Error!!");
+
+		}
+
+	}
+
 }
