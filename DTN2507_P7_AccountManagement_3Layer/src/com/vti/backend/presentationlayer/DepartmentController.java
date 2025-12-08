@@ -25,4 +25,10 @@ public class DepartmentController {
 		return departmentService.getAllDepartment();
 	}
 
+	public Department getDepartmentById(int id) {
+//		
+//		
+		return departmentService.getDepartmentById(id);
+	}
+
 }

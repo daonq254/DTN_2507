@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.vti.backend.presentationlayer.DepartmentController;
 import com.vti.entity.Department;
+import com.vti.utils.ScannerUtils;
 
 public class DepartmentProgram {
 
@@ -32,6 +33,13 @@ public class DepartmentProgram {
 			System.out.format(leftAlignFormat, department.getId(), department.getName());
 		}
 		System.out.format("+--------+-----------------------+%n");
+	}
+
+	public void getDepartmentById() {
+		System.out.println("Hãy nhập vào ID cần tìm kiếm");
+		int id = ScannerUtils.inputIntPositive();
+		Department department = departmentController.getDepartmentById(id);
+
 	}
 
 }

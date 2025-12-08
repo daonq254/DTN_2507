@@ -9,4 +9,6 @@ public interface IDepartmentService {
 
 	List<Department> getAllDepartment() throws ClassNotFoundException, SQLException;
 
+	Department getDepartmentById(int id);
+
 }

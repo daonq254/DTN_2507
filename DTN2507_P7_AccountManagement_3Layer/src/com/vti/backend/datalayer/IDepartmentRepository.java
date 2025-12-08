@@ -9,4 +9,6 @@ public interface IDepartmentRepository {
 
 	public List<Department> getAllDepartment() throws ClassNotFoundException, SQLException;
 
+	public Department getDepartmentById(int id);
+
 }

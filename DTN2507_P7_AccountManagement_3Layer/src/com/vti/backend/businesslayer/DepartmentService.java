@@ -25,4 +25,10 @@ public class DepartmentService implements IDepartmentService {
 		return departmentRepository.getAllDepartment();
 	}
 
+	@Override
+	public Department getDepartmentById(int id) {
+		// TODO Auto-generated method stub
+		return departmentRepository.getDepartmentById(id);
+	}
+
 }

@@ -35,4 +35,10 @@ public class DepartmentRepository implements IDepartmentRepository {
 		return departments;
 	}
 
+	@Override
+	public Department getDepartmentById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

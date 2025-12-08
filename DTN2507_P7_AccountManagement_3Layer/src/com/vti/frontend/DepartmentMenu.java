@@ -39,7 +39,7 @@ public class DepartmentMenu {
 				departmentProgram.getAllDepartment();
 				break;
 			case 2:
-
+				departmentProgram.getDepartmentById();
 				break;
 			case 3:
 
